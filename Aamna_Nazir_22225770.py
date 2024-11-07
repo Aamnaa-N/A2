@@ -2,7 +2,7 @@ import pexpect
 import difflib
 
 # Device details
-host = "192.168.56.102"
+host = "192.168.56.101"
 user = "cisco"
 password = "cisco123!"
 password_enable = "cisco123!"
@@ -36,7 +36,7 @@ def configure_acl_syslog(session, hostname):
 
     # Syslog Configuration - Configure syslog server
     syslog_commands = [
-        "logging host 192.168.10.100",  # Replace with your syslog server IP
+        "logging host 192.168.56.101",  # Replace with your syslog server IP
         "logging trap informational"    # Set log level to informational
     ]
 
